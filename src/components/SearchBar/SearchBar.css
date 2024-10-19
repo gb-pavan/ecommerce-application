@@ -1,0 +1,15 @@
+.searchbar{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    border: none;
+    outline:none;    
+}
+
+
+.sub-search{
+    display: inline-flex;
+    border-bottom: 2px solid black; /* Apply underline to the entire search bar */
+}
