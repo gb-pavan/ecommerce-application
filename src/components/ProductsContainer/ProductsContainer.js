@@ -2,6 +2,9 @@ import React,{useState} from 'react'
 import './ProductsContainer.css'
 import FilterProducts from '../FilterProducts/FilterProducts'
 import ProductGrid from '../ProductGrid/ProductGrid'
+import Pagination from '../Pagination/Pagination'
+import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faAngleDown} from '@fortawesome/free-solid-svg-icons';
 
 const ProductsContainer = () => {
 
@@ -166,6 +169,18 @@ const ProductsContainer = () => {
 
 
     const [openSection, setOpenSection] = useState(null);
+    const [currentPage, setCurrentPage] = useState(1);
+    const productsPerPage = 9;
+
+    const indexOfLastProduct = currentPage * productsPerPage;
+    const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+    const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+    
+    const totalPages = Math.ceil(products.length / productsPerPage);
+
+    const handlePageChange = (page) => {
+      setCurrentPage(page);
+    };
 
     const toggleSection = (section) => {
         setOpenSection(openSection === section ? null : section);
@@ -200,7 +215,12 @@ const ProductsContainer = () => {
                         ))}
                     </div>
                     <div className='products-container'>
-                        <ProductGrid products={products}/>
+                        <div className='sort-button-container'>
+                          <p>300 products</p>
+                          <button className='sort-button'>SORT BY<FontAwesomeIcon icon={faAngleDown} /></button>
+                        </div>
+                        <ProductGrid products={currentProducts}/>
+                        <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={handlePageChange} />
                     </div>
                 </div>
             </div>

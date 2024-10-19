@@ -1,6 +1,7 @@
 .searchbar{
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 input{
@@ -11,5 +12,5 @@ input{
 
 .sub-search{
     display: inline-flex;
-    border-bottom: 2px solid black; /* Apply underline to the entire search bar */
+    border-bottom: 1px solid rgb(143, 143, 143); /* Apply underline to the entire search bar */
 }

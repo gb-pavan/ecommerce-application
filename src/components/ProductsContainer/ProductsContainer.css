@@ -19,3 +19,21 @@
 .products-container {
     width: 75%;
 }
+
+.sort-button-container{
+    display: flex;
+    margin:20px;
+    gap:20px;
+    color:gray;
+}
+
+.sort-button{
+    background-color: rgb(1, 84, 1);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.sort-button .fa-angle-down {
+    margin-left: 35px; /* Adjust the value as needed */
+}

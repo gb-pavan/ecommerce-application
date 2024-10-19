@@ -1,0 +1,72 @@
+/* Parent container to center the content */
+.thanks-container {
+  display: flex;
+  justify-content: center;  /* Horizontally center */
+  align-items: center;      /* Vertically center */
+  height: 100vh;  
+  color:green;          /* Make the container full viewport height to center vertically */
+  
+}
+
+/* Cart heading */
+.cart-heading {
+  text-align: center;
+}
+
+/* Body of the order placed section */
+.order-placed-body {
+  border: 2px solid green;
+  padding: 20px;
+  width: 400px;             /* Set a width so the box has a defined size */
+  background-color: rgb(214, 255, 237);
+  position: relative;
+}
+
+.x-icon{
+  position:absolute;
+  top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    font-size: 12px; /* Adjust size as needed */
+    color: black; /* Adjust color as needed */
+    cursor: pointer; /* Change cursor to pointer for interactivity */
+    font-weight: 500;
+}
+
+
+/* Content of the body section */
+.content-body {
+  text-align: center;
+  margin-top:60px;
+  margin-bottom: 60px;
+  font-size: 20px;
+}
+
+.text-font-size{
+  font-size: 30px;
+  margin-bottom: 80px;
+}
+
+/* Button container */
+.btn-container {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* Button styling */
+.btn-container button {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn-container button:hover {
+  background-color: darkgreen; /* Darker green on hover */
+}

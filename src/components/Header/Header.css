@@ -1,38 +1,14 @@
-/* .header {
-    padding: '10px 20px';
-    background-color: '#333';
-    color: '#fff';
-    display: 'flex';
-    justify-content: 'space-between';
-    align-items: 'center',
-}
-.title {
-    margin: 0,
-}
-.navList {
-    list-style-type: 'none';
-    display: 'flex';
-    gap: '15px',
-}
-.link {
-    color: '#fff';
-    text-decoration: 'none';
-}
-.icons{
-    color: blue;
-} */
-
 .top-card{
-    background-color: red;
+    background-color: rgb(2, 85, 6);
     display: flex;
     justify-content: space-between;
     padding-left:20px;
     padding-right: 20px;
+    color: white;
 }
 
 .header {
     padding: 10px 20px;
-    background-color: aqua;
     color: #000;
     display: flex;
     justify-content: space-between;
