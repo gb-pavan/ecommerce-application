@@ -1,3 +1,21 @@
-.product-container{
+.main-container2 {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.product-container {
+    display: flex;
+    width: 96%; /* Adjust the width as needed */
+    justify-content: space-between;
+}
+
+.filter-list-style {
+    width: 25%;
+    height:fit-content;
+}
+
+.products-container {
+    width: 75%;
 }
