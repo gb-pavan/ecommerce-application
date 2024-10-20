@@ -9,7 +9,7 @@ const ThankYouPage = () => {
   const navigate = useNavigate();
 
    const handleRedirect = () => {
-    navigate('/'); // Specify the path you want to redirect to
+    navigate('/'); 
   };
     return (
         <div className='thanks-container'>     

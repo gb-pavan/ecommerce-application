@@ -1,9 +1,11 @@
 import React,{useState} from 'react';
-import './ProductGrid.css'; // Import the CSS file
-import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faPlus,faMinus,faHeart } from '@fortawesome/free-solid-svg-icons';
+import './ProductGrid.css';
 import Modal from '../Modal/Modal';
 import { useNavigate } from 'react-router-dom';
+import { CiHeart } from "react-icons/ci";
+import { FaPlus } from "react-icons/fa6";
+import { FaMinus } from "react-icons/fa";
+
 
 const ProductGrid = ({ products }) => {
 
@@ -11,7 +13,7 @@ const ProductGrid = ({ products }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleRedirect = () => {
-    navigate('/thank-you'); // Specify the path you want to redirect to
+    navigate('/thank-you'); 
   };
 
   const handleToggle = () => {
@@ -22,15 +24,11 @@ const ProductGrid = ({ products }) => {
     <div className="product-grid">
       {products.map((product, index) => (
         <div key={index} >
-          {/* <div className="product-image">
-            <img src={product.image} alt={product.name} />
-            <p>View Product</p>
-          </div> */}
           <div className="product-card">
             <div className="product-image">
                 <img src={product.image} alt={product.name} />
                 <p className="view-product-text" onClick={handleRedirect}>View Product</p>
-                <span className="heart-icon"><FontAwesomeIcon icon={faHeart} /></span>                
+                <span className="heart-icon"><CiHeart /></span>                
             </div>
           </div>
           <div>
@@ -42,9 +40,9 @@ const ProductGrid = ({ products }) => {
             
             <div className="product-actions">
               <button className="btn add-to-cart" onClick={handleToggle}>
-                <FontAwesomeIcon icon={faPlus} className="icon-left" />
+                <FaPlus className="icon-left" />
                   Add to Cart
-                <FontAwesomeIcon icon={faMinus} className="icon-right" />
+                <FaMinus className="icon-right" />
               </button>
 
               <button className="btn buy-on-rent">Buy on Rent</button>

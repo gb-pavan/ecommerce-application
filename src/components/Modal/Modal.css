@@ -1,11 +1,10 @@
-/* Modal.css */
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color:transparent; /* Semi-transparent background */
+  background-color:transparent; 
   backdrop-filter: blur(0.5px);
   display: flex;
   justify-content: center;

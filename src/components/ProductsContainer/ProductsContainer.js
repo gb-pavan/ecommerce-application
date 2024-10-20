@@ -1,6 +1,5 @@
 import React,{useState} from 'react'
 import './ProductsContainer.css'
-import FilterProducts from '../FilterProducts/FilterProducts'
 import ProductGrid from '../ProductGrid/ProductGrid'
 import Pagination from '../Pagination/Pagination'
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';

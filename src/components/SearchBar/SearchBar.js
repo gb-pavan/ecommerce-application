@@ -1,15 +1,17 @@
 import React from 'react'
 import './SearchBar.css'
-import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faLeaf,faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { PiPlantFill } from "react-icons/pi";
+import { CiSearch } from "react-icons/ci";
+
+
 
 const SearchBar = () => {
     return (
-        <div className='searchbar'>
+        <div className='search-bar'>
             <div className='sub-search'>
-                <FontAwesomeIcon icon={faMagnifyingGlass} />
+                <CiSearch />
                 <input placeholder='Search Plant' />
-                <FontAwesomeIcon icon={faLeaf} />
+                <PiPlantFill />
             </div>
         </div>
         

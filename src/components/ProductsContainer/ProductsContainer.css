@@ -7,7 +7,7 @@
 
 .product-container {
     display: flex;
-    width: 96%; /* Adjust the width as needed */
+    width: 96%; 
     justify-content: space-between;
 }
 
@@ -23,6 +23,7 @@
 .sort-button-container{
     display: flex;
     margin:20px;
+    margin-top: 0px;
     gap:20px;
     color:gray;
 }
@@ -35,5 +36,5 @@
 }
 
 .sort-button .fa-angle-down {
-    margin-left: 35px; /* Adjust the value as needed */
+    margin-left: 35px; 
 }

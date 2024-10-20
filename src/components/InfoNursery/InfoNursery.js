@@ -2,38 +2,79 @@ import React from 'react'
 import './InfoNursery.css'
 
 const InfoNursery = () => {
-    const data = [
+   const data = [
   {
     id: 1,
-    image: 'https://via.placeholder.com/150', // Replace with your image URL
+    image: 'https://via.placeholder.com/150',
     desc: 'Description 1',
   },
   {
     id: 2,
-    image: 'https://via.placeholder.com/150', // Replace with your image URL
+    image: 'https://via.placeholder.com/150',
     desc: 'Description 2',
   },
   {
     id: 3,
-    image: 'https://via.placeholder.com/150', // Replace with your image URL
+    image: 'https://via.placeholder.com/150',
     desc: 'Description 3',
   },
   {
     id: 4,
-    image: 'https://via.placeholder.com/150', // Replace with your image URL
-    desc: 'Description 1',
+    image: 'https://via.placeholder.com/150',
+    desc: 'Description 4',
   },
   {
     id: 5,
-    image: 'https://via.placeholder.com/150', // Replace with your image URL
-    desc: 'Description 2',
+    image: 'https://via.placeholder.com/150',
+    desc: 'Description 5',
   },
   {
     id: 6,
-    image: 'https://via.placeholder.com/150', // Replace with your image URL
-    desc: 'Description 3',
+    image: 'https://via.placeholder.com/150',
+    desc: 'Description 6',
+  },
+  {
+    id: 7,
+    image: 'https://via.placeholder.com/150',
+    desc: 'Description 7',
+  },
+  {
+    id: 8,
+    image: 'https://via.placeholder.com/150',
+    desc: 'Description 8',
+  },
+  {
+    id: 9,
+    image: 'https://via.placeholder.com/150',
+    desc: 'Description 9',
+  },
+  {
+    id: 10,
+    image: 'https://via.placeholder.com/150',
+    desc: 'Description 10',
+  },
+  {
+    id: 11,
+    image: 'https://via.placeholder.com/150',
+    desc: 'Description 11',
+  },
+  {
+    id: 12,
+    image: 'https://via.placeholder.com/150',
+    desc: 'Description 12',
+  },
+  {
+    id: 13,
+    image: 'https://via.placeholder.com/150',
+    desc: 'Description 13',
+  },
+  {
+    id: 14,
+    image: 'https://via.placeholder.com/150',
+    desc: 'Description 14',
   },
 ];
+
     return (
         <div className='main-container'>
             <div>

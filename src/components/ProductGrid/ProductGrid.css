@@ -8,8 +8,6 @@
 
 .product-card {
   border: 1px solid #ddd;
-  /* padding: 15px;
-  border-radius: 8px; */
   text-align: center;
   transition: box-shadow 0.3s ease;
 }
@@ -21,20 +19,20 @@
 .product-image {
   max-width: 100%;
   height: auto;
-  text-align: center; /* Center the text under the image */
+  text-align: center; 
   position: relative;
 }
 
 .product-image img {
   display: block;
-  width: 100%; /* Ensures the image fills the container width */
-  margin: 0; /* Removes any default margin around the image */
+  width: 100%; 
+  margin: 0; 
 }
 
 .view-product-text {
-  margin: 0; /* Removes any extra margin around the text */
-  padding: 10px; /* No padding between the image and text */
-  font-size: 14px; /* Adjust font size as needed */
+  margin: 0; 
+  padding: 10px; 
+  font-size: 14px; 
   background-color: green;
   color: white;
 }
@@ -103,18 +101,17 @@
 }
 
 .icon-left{
-  margin-right: 8px;
+  margin-right: 16px;
 }
 
 .icon-right{
-  margin-left: 8px;
+  margin-left: 16px;
 }
 
 .heart-icon {
     position: absolute;
-    top: 10px; /* Adjust as needed */
-    right: 10px; /* Adjust as needed */
-    font-size: 24px; /* Adjust size as needed */
-    color: red; /* Adjust color as needed */
-    cursor: pointer; /* Change cursor to pointer for interactivity */
+    top: 10px;
+    right: 10px; 
+    font-size: 32px; 
+    cursor: pointer; 
 }
