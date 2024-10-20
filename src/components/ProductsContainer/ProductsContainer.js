@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import './ProductsContainer.css'
-import ProductGrid from '../ProductGrid/ProductGrid'
+import ProductCard from '../ProductCard/ProductCard'
 import Pagination from '../Pagination/Pagination'
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faAngleDown} from '@fortawesome/free-solid-svg-icons';
@@ -218,7 +218,7 @@ const ProductsContainer = () => {
                           <p>300 products</p>
                           <button className='sort-button'>SORT BY<FontAwesomeIcon icon={faAngleDown} /></button>
                         </div>
-                        <ProductGrid products={currentProducts}/>
+                        <ProductCard products={currentProducts}/>
                         <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={handlePageChange} />
                     </div>
                 </div>

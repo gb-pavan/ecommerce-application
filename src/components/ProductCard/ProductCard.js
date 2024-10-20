@@ -1,13 +1,13 @@
 import React,{useState} from 'react';
-import './ProductGrid.css';
-import Modal from '../Modal/Modal';
+import './ProductCard.css';
+import AddToCartModal from '../AddToCartModal/AddToCartModal';
 import { useNavigate } from 'react-router-dom';
 import { CiHeart } from "react-icons/ci";
 import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa";
 
 
-const ProductGrid = ({ products }) => {
+const ProductCard = ({ products }) => {
 
   const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -49,7 +49,7 @@ const ProductGrid = ({ products }) => {
             </div>
           </div>
           {isModalOpen && (
-        <Modal isOpen={isModalOpen} onClose={handleToggle}>
+        <AddToCartModal isOpen={isModalOpen} onClose={handleToggle}>
           <h1>Add to Cart</h1>
           <h3 className="product-name">{product.name}</h3>
           <p className="product-description">{product.description}</p>
@@ -58,7 +58,7 @@ const ProductGrid = ({ products }) => {
             <button className='confirm-btn'>Confirm</button>
             <button onClick={handleToggle}>Close</button>
           
-        </Modal>
+        </AddToCartModal>
       )}
 
           
@@ -70,4 +70,4 @@ const ProductGrid = ({ products }) => {
   );
 };
 
-export default ProductGrid;
+export default ProductCard;
